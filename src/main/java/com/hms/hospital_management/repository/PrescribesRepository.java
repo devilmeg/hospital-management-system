@@ -5,6 +5,11 @@ import com.hms.hospital_management.entity.PrescribesId;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface PrescribesRepository extends JpaRepository<Prescribes, PrescribesId> {
+
+    List<Prescribes> findByPatientSsn(Integer ssn);
+
 }
