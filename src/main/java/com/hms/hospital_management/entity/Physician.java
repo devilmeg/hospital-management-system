@@ -23,4 +23,6 @@ public class Physician {
     private String position;
     @Column(name = "SSN",nullable = false)
     private Integer ssn;
+    @OneToMany(mappedBy = "physician")
+    private List<Appointment> appointments;
 }
