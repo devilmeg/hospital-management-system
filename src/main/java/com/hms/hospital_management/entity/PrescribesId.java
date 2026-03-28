@@ -2,12 +2,16 @@ package com.hms.hospital_management.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 import java.io.Serializable;
 import java.sql.Date;
 
 @Embeddable
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode
 public class PrescribesId implements Serializable {
     @Column(name = "Physician" )

@@ -24,8 +24,7 @@ public class Trained_In {
     @ManyToOne
     @MapsId("treatment")
     @JoinColumn(name = "Treatment", nullable = false)
-    private Treatment treatment;
-
+    private Procedures procedure;
 
 
     @Column(name = "CertificationDate", nullable = false)

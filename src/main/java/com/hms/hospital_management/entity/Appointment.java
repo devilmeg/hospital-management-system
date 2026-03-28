@@ -1,9 +1,11 @@
 package com.hms.hospital_management.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "Appointment")
@@ -18,26 +20,29 @@ public class Appointment {
     @Column(name = "AppointmentID")
     private int appointmentId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Patient", nullable = false)
     private Patient patient;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PrepNurse")
     private Nurse prepNurse;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Physician", nullable = false)
     private Physician physician;
 
     @Column(name = "Starto", nullable = false)
-    private Date startTo;
+    private LocalDateTime startTo;
 
     @Column(name = "Endo", nullable = false)
-    private Date endo;
+    private LocalDateTime endo;
 
-    @Column(name = "ExaminationRoom", nullable = false)
+    @Column(name = "ExaminationRoom", nullable = false, columnDefinition = "TEXT")
     private String examinationRoom;
 
+    @OneToMany(mappedBy = "appointment", fetch = FetchType.LAZY)
+    @JsonIgnore // Important to prevent infinite recursion in JSON
+    private List<Prescribes> prescriptions;
 
 }
