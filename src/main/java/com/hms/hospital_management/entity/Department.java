@@ -29,5 +29,5 @@ public class Department {
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
     @JsonIgnore
-    private List<AffiliatedWith> affiliations;
+    private List<Affiliated_With> affiliations;
 }
