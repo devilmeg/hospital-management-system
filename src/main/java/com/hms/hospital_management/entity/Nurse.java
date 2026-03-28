@@ -52,5 +52,5 @@ public class Nurse {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @Builder.Default
-    private List<OnCall> onCalls = new ArrayList<>();
+    private List<On_Call> onCalls = new ArrayList<>();
 }
