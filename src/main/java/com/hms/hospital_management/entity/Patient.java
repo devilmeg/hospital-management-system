@@ -1,9 +1,10 @@
 package com.hms.hospital_management.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "Patient")
+@Table(name = "patient")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -28,4 +29,14 @@ public class Patient {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PCP")
     private Physician physician;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "patient")
+    @JsonIgnore
+    private List<Appointment> appointments;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "patient")
+    @JsonIgnore
+    private List<Stay> stays;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "patient")
+    @JsonIgnore
+    private List<Prescribes> prescription;
+
 }
