@@ -1,6 +1,7 @@
 package com.hms.hospital_management.entity;
 
 import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,6 +29,7 @@ public class Physician {
     private String position;
     @Column(name = "SSN",nullable = false)
     private Integer ssn;
+
     @OneToMany(mappedBy = "physician")
     private List<Appointment> appointments;
 
