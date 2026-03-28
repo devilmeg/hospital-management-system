@@ -7,14 +7,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
-
 @Entity
-@Table(name = "Patient")
+@Table(name = "patient")
 @Getter
 @Setter
 @NoArgsConstructor

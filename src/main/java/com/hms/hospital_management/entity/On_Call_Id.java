@@ -1,7 +1,6 @@
 package com.hms.hospital_management.entity;
 
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -16,11 +15,20 @@ import java.time.LocalTime;
 @Builder
 @EqualsAndHashCode
 public class On_Call_Id implements Serializable {
+    @Column(name = "OnCallStart")
     private LocalDateTime onCallStart;
+
+    @Column(name = "OnCallEnd")
     private LocalDateTime onCallEnd;
-    private Integer  nurse;
-    private Integer blockFloor;
-    private Integer blockCode;
+
+    @Column(name = "Nurse")
+    private Integer nurse;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "blockFloor", column = @Column(name = "BlockFloor")),
+            @AttributeOverride(name = "blockCode", column = @Column(name = "BlockCode"))
+    })
+    private Block_Id blockId;
 
 
 }

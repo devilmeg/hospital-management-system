@@ -1,16 +1,13 @@
 package com.hms.hospital_management.entity;
 
 import jakarta.persistence.*;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import lombok.*;
 
 import java.util.List;
-
 
 @Entity
 @Table(name = "Physician")
@@ -32,5 +29,4 @@ public class Physician {
 
     @OneToMany(mappedBy = "physician")
     private List<Appointment> appointments;
-
 }
