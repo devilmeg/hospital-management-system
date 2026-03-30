@@ -1,4 +1,4 @@
 package com.hms.hospital_management.dto.request;
 
-public class NurseRequestDto {
+public class PatientRequestDTO {
 }
