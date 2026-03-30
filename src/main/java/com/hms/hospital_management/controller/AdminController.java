@@ -1,4 +1,4 @@
 package com.hms.hospital_management.controller;
 
-public class NurseController {
+public class AdminController {
 }

@@ -10,16 +10,16 @@ public class ModelMapperConfig {
 
     /**
      * ModelMapper Bean for DTO ↔ Entity conversion
+     * Strict matching avoids accidental mapping bugs
      */
     @Bean
     public ModelMapper modelMapper() {
 
         ModelMapper mapper = new ModelMapper();
 
-        // 🔥 Strict mapping (best practice)
         mapper.getConfiguration()
                 .setMatchingStrategy(MatchingStrategies.STRICT)
-                .setSkipNullEnabled(true) // prevents null overwrite (PATCH safe)
+                .setSkipNullEnabled(true) // PATCH-safe
                 .setFieldMatchingEnabled(true)
                 .setFieldAccessLevel(org.modelmapper.config.Configuration.AccessLevel.PRIVATE);
 
