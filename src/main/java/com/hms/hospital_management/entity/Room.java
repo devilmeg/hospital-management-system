@@ -24,8 +24,8 @@ public class Room {
             @AttributeOverride(name = "blockFloor", column = @Column(name = "BlockFloor")),
             @AttributeOverride(name = "blockCode", column = @Column(name = "BlockCode"))
     })
-    @EmbeddedId
-    private BlockId blockId;
+//    @EmbeddedId
+    private Block_Id blockId;
 
     @Column(name = "Unavailable", nullable = false)
     private boolean unavailable;
