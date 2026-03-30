@@ -32,6 +32,6 @@ public class Medication {
     private String description;
 
     //  Relationship with Prescribes (One Medication → Many Prescriptions)
-    @OneToMany(mappedBy = "medication", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "medication", fetch = FetchType.LAZY)
     private List<Prescribes> prescriptions;
 }
