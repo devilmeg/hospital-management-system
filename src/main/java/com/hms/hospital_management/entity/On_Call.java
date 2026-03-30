@@ -20,6 +20,7 @@ public class On_Call {
     private Nurse nurse;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @MapsId("blockId")
     @JoinColumns({
             @JoinColumn(name = "BlockFloor", referencedColumnName = "BlockFloor"),
             @JoinColumn(name = "BlockCode", referencedColumnName = "BlockCode")
