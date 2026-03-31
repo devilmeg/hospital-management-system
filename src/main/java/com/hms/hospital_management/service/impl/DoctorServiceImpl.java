@@ -10,17 +10,17 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PatientServiceImpl implements PatientService {
+public class DoctorServiceImpl implements PatientService {
 
     private final PatientRepository patientRepository;
     private final PatientQueryRepository patientQueryRepository;
     private final AppointmentQueryRepository appointmentRepository;
     private final PrescriptionQueryRepository prescriptionRepository;
 
-    public PatientServiceImpl(PatientRepository patientRepository,
-                              PatientQueryRepository patientQueryRepository,
-                              AppointmentQueryRepository appointmentRepository,
-                              PrescriptionQueryRepository prescriptionRepository) {
+    public DoctorServiceImpl(PatientRepository patientRepository,
+                             PatientQueryRepository patientQueryRepository,
+                             AppointmentQueryRepository appointmentRepository,
+                             PrescriptionQueryRepository prescriptionRepository) {
         this.patientRepository = patientRepository;
         this.patientQueryRepository = patientQueryRepository;
         this.appointmentRepository = appointmentRepository;

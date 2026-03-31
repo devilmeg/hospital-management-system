@@ -1,6 +1,5 @@
 package com.hms.hospital_management.repository.impl;
 
-import com.hms.hospital_management.repository.analytics.ReportRepository;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

@@ -2,7 +2,9 @@ package com.hms.hospital_management.repository.analytics;
 
 import com.hms.hospital_management.dto.response.StaffDTO;
 import com.hms.hospital_management.entity.Nurse;
-import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
 import java.util.List;
 
 public interface NurseStaffRepository extends JpaRepository<Nurse, Integer> {
