@@ -7,6 +7,7 @@ import com.hms.hospital_management.dto.response.DoctorAppointmentDTO;
 import com.hms.hospital_management.dto.response.DoctorPatientDTO;
 import com.hms.hospital_management.dto.response.DoctorProcedureDTO;
 import com.hms.hospital_management.service.DoctorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

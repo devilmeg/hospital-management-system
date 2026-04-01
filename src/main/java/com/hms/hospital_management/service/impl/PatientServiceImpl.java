@@ -7,6 +7,7 @@ import com.hms.hospital_management.exception.ResourceNotFoundException;
 import com.hms.hospital_management.repository.core.PatientRepository;
 import com.hms.hospital_management.repository.query.AppointmentQueryRepository;
 import com.hms.hospital_management.repository.query.PatientQueryRepository;
+import com.hms.hospital_management.repository.query.PrescriptionQueryRepository;
 import com.hms.hospital_management.service.PatientService;
 import org.springframework.stereotype.Service;
 

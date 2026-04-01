@@ -10,5 +10,6 @@ public class StaffDTO {
 
     private String name;
     private String role;
-    private String department;
+    private String position;
+    private String departmentName;
 }

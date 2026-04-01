@@ -12,15 +12,4 @@ import java.util.List;
 @Repository
 public interface StayRepository extends JpaRepository<Stay, Integer> {
 
-    // Find stays for a patient
-    List<Stay> findByPatient(Patient patient);
-
-    // Find stays for a room
-    List<Stay> findByRoom(Room room);
-
-    // IMPORTANT - active patients
-    List<Stay> findByStayEndAfter(LocalDateTime currentTime);
-
-    // Date range query
-    List<Stay> findByStayStartBetween(LocalDateTime start, LocalDateTime end);
 }

@@ -4,50 +4,50 @@ import com.hms.hospital_management.dto.response.*;
 import com.hms.hospital_management.exception.ResourceNotFoundException;
 import com.hms.hospital_management.repository.core.PatientRepository;
 import com.hms.hospital_management.repository.query.*;
+import com.hms.hospital_management.service.DoctorService;
 import com.hms.hospital_management.service.PatientService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class DoctorServiceImpl implements PatientService {
+public class DoctorServiceImpl implements DoctorService {
 
-    private final PatientRepository patientRepository;
-    private final PatientQueryRepository patientQueryRepository;
-    private final AppointmentQueryRepository appointmentRepository;
-    private final PrescriptionQueryRepository prescriptionRepository;
+    private final DoctorQueryRepository doctorRepository;
+    private final DoctorAppointmentQueryRepository appointmentRepository;
+    private final DoctorProcedureRepository procedureRepository;
 
-    public DoctorServiceImpl(PatientRepository patientRepository,
-                             PatientQueryRepository patientQueryRepository,
-                             AppointmentQueryRepository appointmentRepository,
-                             PrescriptionQueryRepository prescriptionRepository) {
-        this.patientRepository = patientRepository;
-        this.patientQueryRepository = patientQueryRepository;
+    public DoctorServiceImpl(DoctorQueryRepository doctorRepository,
+                             DoctorAppointmentQueryRepository appointmentRepository,
+                             DoctorProcedureRepository procedureRepository) {
+        this.doctorRepository = doctorRepository;
         this.appointmentRepository = appointmentRepository;
-        this.prescriptionRepository = prescriptionRepository;
+        this.procedureRepository = procedureRepository;
     }
 
     @Override
-    public PatientProfileDTO getPatientProfile(Integer ssn) {
-        validatePatient(ssn);
-        return patientQueryRepository.getPatientProfile(ssn);
-    }
+    public List<DoctorPatientDTO> getPatients(Integer id) {
 
-    @Override
-    public List<PatientAppointmentDTO> getAppointments(Integer ssn) {
-        validatePatient(ssn);
-        return appointmentRepository.getAppointments(ssn);
-    }
+        List<DoctorPatientDTO> list = doctorRepository.getDoctorPatients(id);
 
-    @Override
-    public List<PrescriptionDTO> getPrescriptions(Integer ssn) {
-        validatePatient(ssn);
-        return prescriptionRepository.getPrescriptions(ssn);
-    }
-
-    private void validatePatient(Integer ssn) {
-        if (!patientRepository.existsById(ssn)) {
-            throw new ResourceNotFoundException("Patient not found: " + ssn);
+        if (list.isEmpty()) {
+            throw new ResourceNotFoundException("No patients found for doctor id: " + id);
         }
+
+        return list;
+    }
+    @Override
+    public List<DoctorAppointmentDTO> getTodayAppointments(Integer id) {
+        return appointmentRepository.getTodayAppointments(id);
+    }
+
+    @Override
+    public List<DoctorProcedureDTO> getTrainedProcedures(Integer id) {
+
+        List<DoctorProcedureDTO> list = procedureRepository.getTrainedProcedures(id);
+
+
+
+        return list;
     }
 }
