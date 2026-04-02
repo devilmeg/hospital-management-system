@@ -14,9 +14,9 @@ public interface PrescriptionQueryRepository extends JpaRepository<Prescribes, P
     @Query("""
         SELECT new com.hms.hospital_management.dto.response.PrescriptionDTO(
             m.name,
-            m.brand,
+            phy.name,
             pr.dose,
-            phy.name
+            pr.prescribesId.date
         )
         FROM Prescribes pr
         JOIN pr.medication m

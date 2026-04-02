@@ -1,15 +1,16 @@
 package com.hms.hospital_management.dto.response;
 
 import lombok.*;
+import java.sql.Date;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class PrescriptionDTO {
 
     private String medicationName;
     private String doctorName;
     private String dose;
-    private String prescribedDate;
+    private Date prescribedDate;
 }
