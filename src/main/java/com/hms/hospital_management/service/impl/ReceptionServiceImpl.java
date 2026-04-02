@@ -39,8 +39,4 @@ public class ReceptionServiceImpl implements ReceptionService {
         return nurseRepository.getActiveOnCall();
     }
 
-    @Override
-    public List<NurseOnCallDTO> getNurses() {
-        return List.of();
-    }
 }

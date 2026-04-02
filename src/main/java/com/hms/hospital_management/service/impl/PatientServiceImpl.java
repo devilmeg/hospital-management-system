@@ -1,12 +1,9 @@
 package com.hms.hospital_management.service.impl;
 
-import com.hms.hospital_management.dto.response.PatientAppointmentDTO;
-import com.hms.hospital_management.dto.response.PatientProfileDTO;
-import com.hms.hospital_management.dto.response.PrescriptionDTO;
+import com.hms.hospital_management.dto.response.*;
 import com.hms.hospital_management.exception.ResourceNotFoundException;
 import com.hms.hospital_management.repository.core.PatientRepository;
-import com.hms.hospital_management.repository.query.AppointmentQueryRepository;
-import com.hms.hospital_management.repository.query.PatientQueryRepository;
+import com.hms.hospital_management.repository.query.*;
 import com.hms.hospital_management.service.PatientService;
 import org.springframework.stereotype.Service;
 
@@ -19,15 +16,17 @@ public class PatientServiceImpl implements PatientService {
     private final PatientQueryRepository patientQueryRepository;
     private final AppointmentQueryRepository appointmentRepository;
     private final PrescriptionQueryRepository prescriptionRepository;
+    private final StayQueryRepository stayRepository;
 
     public PatientServiceImpl(PatientRepository patientRepository,
                               PatientQueryRepository patientQueryRepository,
                               AppointmentQueryRepository appointmentRepository,
-                              PrescriptionQueryRepository prescriptionRepository) {
+                              PrescriptionQueryRepository prescriptionRepository, StayQueryRepository stayRepository) {
         this.patientRepository = patientRepository;
         this.patientQueryRepository = patientQueryRepository;
         this.appointmentRepository = appointmentRepository;
         this.prescriptionRepository = prescriptionRepository;
+        this.stayRepository = stayRepository;
     }
 
     @Override
@@ -52,5 +51,19 @@ public class PatientServiceImpl implements PatientService {
         if (!patientRepository.existsById(ssn)) {
             throw new ResourceNotFoundException("Patient not found: " + ssn);
         }
+    }
+
+    @Override
+    public List<PatientStayHistoryDTO> getStayHistory(Integer ssn) {
+
+        validatePatient(ssn);
+
+        List<PatientStayHistoryDTO> list = stayRepository.getStayHistory(ssn);
+
+        if (list.isEmpty()) {
+            throw new ResourceNotFoundException("No stay history found for patient: " + ssn);
+        }
+
+        return list;
     }
 }

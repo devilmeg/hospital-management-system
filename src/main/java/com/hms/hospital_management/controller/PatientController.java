@@ -20,7 +20,7 @@ public class PatientController {
         this.patientService = patientService;
     }
 
-
+    //  GET Patient Profile
     @GetMapping("/{ssn}")
     public ResponseEntity<ApiResponse<PatientProfileDTO>> getPatientProfile(@PathVariable Integer ssn) {
 
@@ -31,6 +31,7 @@ public class PatientController {
         );
     }
 
+    //  GET Prescriptions
     @GetMapping(ApiPaths.PATIENT_PRESCRIPTIONS)
     public ResponseEntity<ApiResponse<List<PrescriptionDTO>>> getPrescriptions(@PathVariable Integer ssn) {
 
@@ -40,12 +41,29 @@ public class PatientController {
         );
     }
 
+    //  GET Appointments
     @GetMapping(ApiPaths.PATIENT_APPOINTMENTS)
     public ResponseEntity<ApiResponse<List<PatientAppointmentDTO>>> getAppointments(@PathVariable Integer ssn) {
 
         return ResponseEntity.ok(
                 new ApiResponse<>(AppConstants.SUCCESS, AppConstants.DATA_FETCHED,
                         patientService.getAppointments(ssn))
+        );
+
+
+    }
+
+    // Get Patient Room History
+    @GetMapping("/{ssn}/stay-history")
+    public ResponseEntity<ApiResponse<List<PatientStayHistoryDTO>>> getStayHistory(
+            @PathVariable Integer ssn) {
+
+        return ResponseEntity.ok(
+                new ApiResponse<>(
+                        AppConstants.SUCCESS,
+                        AppConstants.DATA_FETCHED,
+                        patientService.getStayHistory(ssn)
+                )
         );
     }
 }

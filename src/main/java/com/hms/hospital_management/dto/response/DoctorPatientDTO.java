@@ -7,6 +7,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DoctorPatientDTO {
-
+    private Integer patientSSN;
     private String patientName;
 }

@@ -1,6 +1,10 @@
 package com.hms.hospital_management.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.hms.hospital_management.constants.AppConstants;
 import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -9,6 +13,8 @@ import lombok.*;
 public class DoctorAppointmentDTO {
 
     private String patientName;
-    private Integer roomNumber;
-    private String appointmentTime;
+    private String room;
+
+    @JsonFormat(pattern = AppConstants.DATE_TIME_FORMAT)
+    private LocalDateTime appointmentTime;
 }
