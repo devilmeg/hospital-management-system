@@ -10,14 +10,4 @@ import java.util.List;
 @Repository
 public interface RoomRepository extends JpaRepository<Room, Integer> {
 
-    // IMPORTANT API -/api/rooms/status
-    List<Room> findByUnavailableTrue();
-
-    List<Room> findByUnavailableFalse();
-
-    // Filter by block
-    List<Room> findByBlockId(Block_Id blockId);
-
-    // Filter by type
-    List<Room> findByRoomType(String roomType);
 }

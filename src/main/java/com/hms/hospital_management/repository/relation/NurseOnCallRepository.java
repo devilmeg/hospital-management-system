@@ -11,18 +11,18 @@ import java.util.List;
 public interface NurseOnCallRepository extends JpaRepository<On_Call, On_Call_Id> {
 
     @Query("""
-    SELECT new com.hms.hospital_management.dto.response.NurseOnCallDTO(
-        n.name,
-        b.id.blockFloor,
-        b.id.blockCode,
-        o.onCallStart,
-        o.onCallEnd
-        
-    )
-    FROM On_Call o
-    JOIN o.nurse n
-    JOIN o.block b
-   
-""")
+        SELECT new com.hms.hospital_management.dto.response.NurseOnCallDTO(
+            n.name,
+            b.id.blockFloor,
+            b.id.blockCode,
+            o.id.onCallStart,
+            o.id.onCallEnd
+            
+        )
+        FROM On_Call o
+        JOIN o.nurse n
+        JOIN o.block b
+       
+    """)
     List<NurseOnCallDTO> getActiveOnCall();
 }

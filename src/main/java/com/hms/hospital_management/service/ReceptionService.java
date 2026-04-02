@@ -12,6 +12,4 @@ public interface ReceptionService {
     List<AppointmentByDateDTO> getAppointmentsByDate(LocalDate date);
 
     List<NurseOnCallDTO> getOnCallNurses();
-
-    List<NurseOnCallDTO> getNurses();
 }
