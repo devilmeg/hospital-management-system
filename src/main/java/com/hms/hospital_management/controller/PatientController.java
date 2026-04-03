@@ -1,14 +1,12 @@
 package com.hms.hospital_management.controller;
 
-import com.hms.hospital_management.constants.ApiPaths;
-import com.hms.hospital_management.constants.AppConstants;
+import com.hms.hospital_management.constants.*;
 import com.hms.hospital_management.dto.response.*;
 import com.hms.hospital_management.service.PatientService;
+import com.hms.hospital_management.dto.response.ApiResponse;
+
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
