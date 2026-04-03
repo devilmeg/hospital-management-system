@@ -3,7 +3,6 @@ package com.hms.hospital_management.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 @Entity

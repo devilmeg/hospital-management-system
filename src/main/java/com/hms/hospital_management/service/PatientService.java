@@ -10,7 +10,8 @@ public interface PatientService {
 
     List<PatientAppointmentDTO> getAppointments(Integer ssn);
 
-    List<PrescriptionDTO> getPrescriptions(Integer ssn);
+    List<PatientPrescriptionDTO> getPatientPrescriptions(Integer ssn);
 
     List<PatientStayHistoryDTO> getStayHistory(Integer ssn);
+
 }
