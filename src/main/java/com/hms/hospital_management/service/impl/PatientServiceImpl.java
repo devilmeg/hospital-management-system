@@ -7,6 +7,8 @@ import com.hms.hospital_management.repository.query.*;
 import com.hms.hospital_management.service.PatientService;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -35,17 +37,79 @@ public class PatientServiceImpl implements PatientService {
         return patientQueryRepository.getPatientProfile(ssn);
     }
 
+
+
     @Override
-    public List<PatientAppointmentDTO> getAppointments(Integer ssn) {
+    public List<PatientPrescriptionDTO> getPatientPrescriptions(Integer ssn) {
         validatePatient(ssn);
-        return appointmentRepository.getAppointments(ssn);
+        List<PatientPrescriptionDTO> list = patientQueryRepository.getPatientPrescriptions(ssn);
+        Date now = new Date();
+        for (PatientPrescriptionDTO dto : list) {
+
+            Date prescriptionDate = dto.getAppointmentDate();
+
+            long diff = now.getTime() - prescriptionDate.getTime();
+            long days = diff / (1000 * 60 * 60 * 24);
+
+            if (days <= 7) {
+                dto.setStatus("Active");
+            } else {
+                dto.setStatus("Completed");
+            }
+        }
+
+        return list;
     }
 
     @Override
-    public List<PrescriptionDTO> getPrescriptions(Integer ssn) {
-        validatePatient(ssn);
-        return prescriptionRepository.getPrescriptions(ssn);
+    public List<PatientAppointmentDTO> getAppointments(Integer ssn) {
+
+        List<PatientAppointmentDTO> list =
+                patientQueryRepository.getAppointments(ssn);
+
+        LocalDateTime now = LocalDateTime.now();
+
+        for (PatientAppointmentDTO dto : list) {
+
+            if (dto.getStartTime() == null) continue;
+
+            if (dto.getEndTime() != null && dto.getEndTime().isBefore(now)) {
+                dto.setStatus("COMPLETED");
+            } else if (dto.getStartTime().isAfter(now)) {
+                dto.setStatus("UPCOMING");
+            } else {
+                dto.setStatus("ONGOING");
+            }
+        }
+
+        return list;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void validatePatient(Integer ssn) {
         if (!patientRepository.existsById(ssn)) {

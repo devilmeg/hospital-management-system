@@ -55,3 +55,4 @@ ORDER BY p.prescribesId.date DESC
 """)
     List<PatientAppointmentDTO> getAppointments(@Param("ssn") Integer ssn);
 }
+
