@@ -31,26 +31,18 @@ public class PatientController {
         );
     }
 
-    //  GET Prescriptions
-    @GetMapping(ApiPaths.PATIENT_PRESCRIPTIONS)
-    public ResponseEntity<ApiResponse<List<PrescriptionDTO>>> getPrescriptions(@PathVariable Integer ssn) {
-
-        return ResponseEntity.ok(
-                new ApiResponse<>(AppConstants.SUCCESS, AppConstants.DATA_FETCHED,
-                        patientService.getPrescriptions(ssn))
-        );
-    }
-
     //  GET Appointments
-    @GetMapping(ApiPaths.PATIENT_APPOINTMENTS)
-    public ResponseEntity<ApiResponse<List<PatientAppointmentDTO>>> getAppointments(@PathVariable Integer ssn) {
+    @GetMapping(ApiPaths.PATIENT_PRESCRIPTIONS)
+    public ResponseEntity<ApiResponse<List<PatientPrescriptionDTO>>> getPrescriptions(
+            @PathVariable Integer ssn) {
 
         return ResponseEntity.ok(
-                new ApiResponse<>(AppConstants.SUCCESS, AppConstants.DATA_FETCHED,
-                        patientService.getAppointments(ssn))
+                new ApiResponse<>(
+                        AppConstants.SUCCESS,
+                        AppConstants.DATA_FETCHED,
+                        patientService.getPatientPrescriptions(ssn)
+                )
         );
-
-
     }
 
     // Get Patient Room History
@@ -63,6 +55,19 @@ public class PatientController {
                         AppConstants.SUCCESS,
                         AppConstants.DATA_FETCHED,
                         patientService.getStayHistory(ssn)
+                )
+        );
+    }
+
+    @GetMapping("/{ssn}/appointments")
+    public ResponseEntity<ApiResponse<List<PatientAppointmentDTO>>> getAppointments(
+            @PathVariable Integer ssn) {
+
+        return ResponseEntity.ok(
+                new ApiResponse<>(
+                        "SUCCESS",
+                        "Appointments fetched",
+                        patientService.getAppointments(ssn)
                 )
         );
     }

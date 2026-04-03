@@ -1,10 +1,6 @@
 package com.hms.hospital_management.dto.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
+import lombok.*;
 import java.time.LocalDateTime;
 
 @Data
@@ -12,7 +8,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class PatientAppointmentDTO {
-
-    private LocalDateTime appointmentDate;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
     private String physicianName;
+    private String status;
+
+
 }
