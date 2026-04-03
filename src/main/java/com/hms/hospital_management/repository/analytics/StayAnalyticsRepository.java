@@ -2,9 +2,7 @@ package com.hms.hospital_management.repository.analytics;
 
 import com.hms.hospital_management.dto.response.RevenueDTO;
 import com.hms.hospital_management.entity.Stay;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
+import org.springframework.data.jpa.repository.*;
 import java.util.List;
 
 public interface StayAnalyticsRepository extends JpaRepository<Stay, Integer> {
@@ -14,9 +12,9 @@ public interface StayAnalyticsRepository extends JpaRepository<Stay, Integer> {
             'Room',
             CAST(r.roomNumber AS string),
             COUNT(s),
-            SUM(
+            COALESCE(SUM(
                 FUNCTION('TIMESTAMPDIFF', DAY, s.stayStart, s.stayEnd)
-            )
+            ), 0)
         )
         FROM Stay s
         JOIN s.room r
