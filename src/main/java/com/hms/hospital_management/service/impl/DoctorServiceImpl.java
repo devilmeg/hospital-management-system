@@ -1,14 +1,19 @@
 package com.hms.hospital_management.service.impl;
 
 import com.hms.hospital_management.dto.response.*;
+import com.hms.hospital_management.entity.Appointment;
+import com.hms.hospital_management.entity.Trained_In;
 import com.hms.hospital_management.exception.ResourceNotFoundException;
 import com.hms.hospital_management.repository.core.PatientRepository;
 import com.hms.hospital_management.repository.query.*;
 import com.hms.hospital_management.service.DoctorService;
 import com.hms.hospital_management.service.PatientService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class DoctorServiceImpl implements DoctorService {
@@ -16,19 +21,22 @@ public class DoctorServiceImpl implements DoctorService {
     private final DoctorQueryRepository doctorRepository;
     private final DoctorAppointmentQueryRepository appointmentRepository;
     private final DoctorProcedureRepository procedureRepository;
+    private final DoctorPatientHistoryQueryRepository  patientHistoryQueryRepository;
 
     public DoctorServiceImpl(DoctorQueryRepository doctorRepository,
                              DoctorAppointmentQueryRepository appointmentRepository,
-                             DoctorProcedureRepository procedureRepository) {
+                             DoctorProcedureRepository procedureRepository,
+                             DoctorPatientHistoryQueryRepository patientHistoryQueryRepository) {
         this.doctorRepository = doctorRepository;
         this.appointmentRepository = appointmentRepository;
         this.procedureRepository = procedureRepository;
+        this.patientHistoryQueryRepository = patientHistoryQueryRepository;
     }
 
-    @Override
-    public List<DoctorPatientDTO> getPatients(Integer id) {
 
-        List<DoctorPatientDTO> list = doctorRepository.getDoctorPatients(id);
+    @Override
+    public Page<DoctorPatientDTO> getPatients(Integer id, Pageable pageable) {
+        Page<DoctorPatientDTO> list = doctorRepository.getDoctorPatients(id, pageable);
 
         if (list.isEmpty()) {
             throw new ResourceNotFoundException("No patients found for doctor id: " + id);
@@ -36,18 +44,27 @@ public class DoctorServiceImpl implements DoctorService {
 
         return list;
     }
+
     @Override
-    public List<DoctorAppointmentDTO> getTodayAppointments(Integer id) {
-        return appointmentRepository.getTodayAppointments(id);
+    public Page<DoctorAppointmentDTO> getTodayAppointments(Integer id, Pageable pageable) {
+        Page<Appointment> appointments = appointmentRepository.getTodayAppointments(id, pageable);
+        return appointments.map(DoctorAppointmentDTO::new);
     }
 
     @Override
-    public List<DoctorProcedureDTO> getTrainedProcedures(Integer id) {
+    public Page<DoctorProcedureDTO> getTrainedProcedures(Integer id, Pageable pageable) {
 
-        List<DoctorProcedureDTO> list = procedureRepository.getTrainedProcedures(id);
+        Page<Trained_In> trainingRecords = procedureRepository.getTrainedProcedures(id,pageable);
 
+        return trainingRecords.map(DoctorProcedureDTO::new);
+    }
 
+    @Override
+    public List<DoctorPatientHistoryDto> getPatientMedicalHistory(Integer ssn) {
+        List<Appointment> appointments = patientHistoryQueryRepository.findAllHistoryByPatientSSN(ssn);
 
-        return list;
+        return appointments.stream()
+                .map(DoctorPatientHistoryDto::new)
+                .collect(Collectors.toUnmodifiableList());
     }
 }

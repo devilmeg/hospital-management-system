@@ -6,6 +6,7 @@ import com.hms.hospital_management.dto.response.ErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.time.LocalDateTime;
 
@@ -74,5 +75,19 @@ public class GlobalExceptionHandler {
         error.setErrorTime(LocalDateTime.now());
 
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ResponseEntity<ErrorResponse> handleTypeMismatch(
+            MethodArgumentTypeMismatchException ex,
+            HttpServletRequest request) {
+
+        ErrorResponse error = new ErrorResponse();
+        error.setApiPath(request.getRequestURI());
+        error.setStatus(AppConstants.FAILED);
+        error.setErrorMessage("Invalid parameter format: " + ex.getName());
+        error.setErrorTime(LocalDateTime.now());
+
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
     }
 }
