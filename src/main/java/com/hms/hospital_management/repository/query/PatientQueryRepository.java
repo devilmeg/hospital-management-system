@@ -1,5 +1,6 @@
 package com.hms.hospital_management.repository.query;
 
+import com.hms.hospital_management.dto.response.PatientProfileDTO;
 import com.hms.hospital_management.entity.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

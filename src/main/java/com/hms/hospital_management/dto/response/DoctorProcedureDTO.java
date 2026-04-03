@@ -7,6 +7,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DoctorProcedureDTO {
-
     private String procedureName;
+    private Double cost;
 }

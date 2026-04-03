@@ -10,5 +10,6 @@ public class PrescriptionDTO {
 
     private String medicationName;
     private String doctorName;
+    private String dose;
     private String prescribedDate;
 }
