@@ -70,7 +70,8 @@ public class GlobalExceptionHandler {
         ErrorResponse error = new ErrorResponse();
         error.setApiPath(request.getRequestURI());
         error.setStatus(AppConstants.FAILED);
-        error.setErrorMessage(ErrorMessages.INTERNAL_SERVER_ERROR);
+        error.setErrorMessage(ex.getMessage());
+        ex.printStackTrace();
         error.setErrorTime(LocalDateTime.now());
 
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
