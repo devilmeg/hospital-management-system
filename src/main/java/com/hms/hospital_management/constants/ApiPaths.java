@@ -24,6 +24,7 @@ public final class ApiPaths {
     public static final String DOCTOR_PATIENTS = "/{id}/patients";
     public static final String DOCTOR_APPOINTMENTS_TODAY = "/{id}/appointments/today";
     public static final String DOCTOR_PROCEDURES = "/{id}/procedures/trained";
+    public static final String DOCTOR_PATIENTS_RECORD = "patients/{ssn}/history";
 
 
     public static final String ROOMS = V1_BASE + "/rooms";
