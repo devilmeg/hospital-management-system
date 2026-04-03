@@ -2,10 +2,7 @@ package com.hms.hospital_management.controller;
 
 import com.hms.hospital_management.constants.ApiPaths;
 import com.hms.hospital_management.constants.AppConstants;
-import com.hms.hospital_management.dto.response.ApiResponse;
-import com.hms.hospital_management.dto.response.PaginatedResponse;
-import com.hms.hospital_management.dto.response.RevenueDTO;
-import com.hms.hospital_management.dto.response.StaffDTO;
+import com.hms.hospital_management.dto.response.*;
 import com.hms.hospital_management.service.AdminService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(ApiPaths.ADMIN)
@@ -39,5 +37,15 @@ public class AdminController {
             @RequestParam(defaultValue = "5") int size
     ) {
         return ResponseEntity.ok(adminService.getAllStaff(page, size));
+    }
+
+
+    @GetMapping("/logs")
+    public ResponseEntity<PaginatedResponse<List<LogDTO>>> getLogs(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(required = false) String level
+    ) {
+        return ResponseEntity.ok(adminService.getLogs(page, size, level));
     }
 }
