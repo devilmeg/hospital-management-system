@@ -1,10 +1,7 @@
 package com.hms.hospital_management.service.impl;
 
 import com.hms.hospital_management.constants.AppConstants;
-import com.hms.hospital_management.dto.response.ApiResponse;
-import com.hms.hospital_management.dto.response.PaginatedResponse;
-import com.hms.hospital_management.dto.response.RevenueDTO;
-import com.hms.hospital_management.dto.response.StaffDTO;
+import com.hms.hospital_management.dto.response.*;
 import com.hms.hospital_management.exception.BadRequestException;
 import com.hms.hospital_management.exception.ResourceNotFoundException;
 import com.hms.hospital_management.repository.analytics.NurseStaffRepository;
@@ -14,17 +11,24 @@ import com.hms.hospital_management.repository.analytics.StayAnalyticsRepository;
 import com.hms.hospital_management.service.AdminService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class AdminServiceImpl implements AdminService {
 
     private static final Logger log = LoggerFactory.getLogger(AdminServiceImpl.class);
+    private static final String LOG_FILE = "logs/application.log";
 
     private final RevenueRepository revenueRepository;
     private final StayAnalyticsRepository stayRepository;
@@ -53,7 +57,7 @@ public class AdminServiceImpl implements AdminService {
         List<RevenueDTO> procedures = revenueRepository.getProcedureRevenue();
         List<RevenueDTO> rooms = stayRepository.getRoomRevenue();
 
-        // ✅ Procedure enrichment
+        //  Procedure enrichment
         for (RevenueDTO r : procedures) {
             double unit = r.getRevenue() / r.getCount();
             r.setUnitCost(unit);
@@ -61,7 +65,7 @@ public class AdminServiceImpl implements AdminService {
             r.setCategory("Medical Procedure");
         }
 
-        // ✅ Room enrichment
+        //  Room enrichment
         for (RevenueDTO r : rooms) {
             double days = r.getRevenue();
             r.setTotalDays(days);
@@ -168,4 +172,100 @@ public class AdminServiceImpl implements AdminService {
                 .data(paginated)
                 .build();
     }
+
+    @Override
+    public PaginatedResponse<List<LogDTO>> getLogs(int page, int size, String level) {
+
+        List<LogDTO> allLogs = new ArrayList<>();
+
+        try {
+            Path path = Paths.get(System.getProperty("user.dir"), "logs", "hospital-management.log");
+
+            // 🔥 DEBUG PRINT
+            System.out.println("LOG FILE PATH: " + path.toAbsolutePath());
+
+            if (!Files.exists(path)) {
+                // ❗ DO NOT THROW EXCEPTION
+                return PaginatedResponse.<List<LogDTO>>builder()
+                        .status("SUCCESS")
+                        .message("Log file not found")
+                        .currentPage(page)
+                        .totalPages(0)
+                        .totalRecords((long)0)
+                        .data(new ArrayList<>())
+                        .build();
+            }
+
+            List<String> lines = Files.readAllLines(path);
+
+            // ... existing code in getLogs loop ...
+            for (String line : lines) {
+
+                if (line == null || line.length() < 20) continue;
+
+                String time = line.substring(0, 19);
+                String remaining = line.substring(20);
+
+                String logLevel = "INFO";
+                if (remaining.contains("ERROR")) logLevel = "ERROR";
+                else if (remaining.contains("WARN")) logLevel = "WARN";
+                else if (remaining.contains("DEBUG")) logLevel = "DEBUG";
+
+                if (level != null && !level.isEmpty() && !logLevel.equals(level)) {
+                    continue;
+                }
+
+                // --- NEW MINIMIZATION LOGIC START ---
+                String displayMessage = remaining;
+
+                // Minimize Spring Boot/System startup noise
+                if (remaining.contains("Running with Spring Boot")) {
+                    displayMessage = remaining.split("-")[0].trim() + " - [Spring Boot System Info]";
+                } else if (remaining.contains("Starting AdminControllerTest")) {
+                    displayMessage = remaining.split("-")[0].trim() + " - [Test Started]";
+                }
+                // --- NEW MINIMIZATION LOGIC END ---
+
+                allLogs.add(new LogDTO(time, logLevel, displayMessage));
+            }
+// ... existing pagination code ...
+
+        } catch (Exception e) {
+            // ❌ REMOVE CRASH
+            System.out.println("LOG ERROR: " + e.getMessage());
+
+            return PaginatedResponse.<List<LogDTO>>builder()
+                    .status("FAILED")
+                    .message("Unable to read logs")
+                    .currentPage(page)
+                    .totalPages(0)
+                    .totalRecords((long)0)
+                    .data(new ArrayList<>())
+                    .build();
+        }
+
+        // ✅ PAGINATION
+        int totalRecords = allLogs.size();
+        int totalPages = (int) Math.ceil((double) totalRecords / size);
+
+        int start = page * size;
+        int end = Math.min(start + size, totalRecords);
+
+        List<LogDTO> pageList = new ArrayList<>();
+
+        if (start < totalRecords) {
+            pageList = allLogs.subList(start, end);
+        }
+
+        return PaginatedResponse.<List<LogDTO>>builder()
+                .status("SUCCESS")
+                .message("Logs fetched successfully")
+                .currentPage(page)
+                .totalPages(totalPages)
+                .totalRecords((long)totalRecords)
+                .data(pageList)
+                .build();
+    }
+
+
 }

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Trained_In")
@@ -28,8 +29,8 @@ public class Trained_In {
 
 
     @Column(name = "CertificationDate", nullable = false)
-    private Date certificationDate;
+    private LocalDateTime certificationDate;
 
     @Column(name = "CertificationExpires", nullable = false)
-    private Date certificationExpires;
+    private LocalDateTime certificationExpires;
 }
