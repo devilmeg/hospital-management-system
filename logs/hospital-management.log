@@ -3,3 +3,835 @@
 2026-04-03 11:31:42 [main] INFO  c.h.h.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"
 2026-04-03 11:31:44 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
 2026-04-03 11:31:45 [main] INFO  c.h.h.controller.AdminControllerTest - Started AdminControllerTest in 3.17 seconds (process running for 4.641)
+2026-04-03 13:31:20 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 15472 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 13:31:20 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 13:31:20 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 13:31:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 13:31:21 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 13:31:21 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 13:31:22 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 13:31:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 13:31:22 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@317d01dd
+2026-04-03 13:31:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 13:31:23 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 13:31:23 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 13:31:25 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 13:31:25 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 13:31:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 13:31:25 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.288 seconds (process running for 5.711)
+2026-04-03 13:32:04 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 13:32:04 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:32:04 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:32:04 [http-nio-8082-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-04-03 13:33:45 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:33:45 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:33:49 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 13:33:49 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 13:33:51 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:33:51 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:33:55 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 13:33:55 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:33:59 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 13:33:59 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:34:00 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 13:34:00 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:34:10 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 13:34:10 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:34:22 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 13:34:22 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:34:26 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:34:26 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:34:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 13:34:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 13:46:23 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 26160 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 13:46:23 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 13:46:23 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 13:46:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 13:46:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 13:46:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 13:46:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 13:46:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 13:46:25 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1076456
+2026-04-03 13:46:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 13:46:25 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 13:46:25 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 13:46:27 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 13:46:27 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 13:46:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 13:46:28 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.792 seconds (process running for 5.219)
+2026-04-03 13:47:10 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 13:47:46 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:47:46 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:48:45 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 13:48:45 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 13:48:47 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:48:47 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:48:48 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 13:48:48 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 13:48:49 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:48:49 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:48:57 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:48:57 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:49:20 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=2
+2026-04-03 13:49:20 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 13:49:25 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:49:25 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:49:52 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:49:52 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:49:54 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:49:54 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:50:03 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:50:03 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:50:13 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 13:50:13 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 13:50:14 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:50:14 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:50:37 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:50:37 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:50:44 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:50:44 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 13:51:01 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 13:51:01 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 13:52:21 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 13:52:21 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:06:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:06:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:05 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:07:05 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:07:06 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:06 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:07 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:07:07 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:07:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:19 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:19 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:19 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:19 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:19 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:19 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:07:26 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:07:26 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:07:28 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:07:28 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:08:32 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:08:32 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:08:36 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:08:36 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:08:39 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:08:39 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:08:55 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:08:55 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:08:58 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 14:08:58 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:09:00 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 14:09:00 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 14:09:02 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 14:09:02 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:09:03 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:09:03 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:09:06 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:09:06 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:09:23 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 14:09:23 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 14:14:00 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 14:14:00 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:14:01 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:14:01 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:14:45 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=0
+2026-04-03 14:14:45 [http-nio-8082-exec-1] ERROR c.h.h.service.impl.AdminServiceImpl - Invalid page size: 0
+2026-04-03 14:14:45 [http-nio-8082-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hms.hospital_management.exception.BadRequestException: Page size must be greater than 0]
+2026-04-03 14:14:53 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:14:53 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:24:58 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:24:58 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:25:07 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:25:07 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:25:11 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:25:11 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:25:51 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:25:51 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:25:55 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:25:55 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:25:57 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:25:57 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:02 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:02 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:05 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:26:05 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:26:06 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:06 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:15 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:15 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:21 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:21 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:29 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:29 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:26:41 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:26:41 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:26:56 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:26:56 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:28:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 14:28:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 14:41:57 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 14632 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 14:41:57 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 14:41:57 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 14:41:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:41:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 14:41:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 14:41:58 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 14:41:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 14:41:59 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abc084c
+2026-04-03 14:41:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 14:41:59 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:41:59 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:42:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 14:42:01 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 14:42:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:42:01 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.617 seconds (process running for 5.028)
+2026-04-03 14:42:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 14:42:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 14:42:42 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 24108 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 14:42:42 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 14:42:42 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 14:42:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:42:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 14:42:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 14:42:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 14:42:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 14:42:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f8e7c0
+2026-04-03 14:42:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 14:42:44 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:42:44 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:42:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 14:42:46 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 14:42:46 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:42:46 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 3.855 seconds (process running for 4.223)
+2026-04-03 14:43:04 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 14:43:04 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:43:05 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:43:07 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:43:07 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:43:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:43:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:43:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:43:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:43:14 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:43:14 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:43:15 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:43:15 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:43:18 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:43:18 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:43:32 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:43:32 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:45:45 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:45:45 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 14:48:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 14:48:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 14:53:43 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 12756 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 14:53:43 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 14:53:43 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 14:53:44 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:53:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 14:53:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 14:53:44 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 14:53:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 14:53:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@94a68dd
+2026-04-03 14:53:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 14:53:45 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:53:45 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 14:53:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 14:53:47 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 14:53:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 14:53:47 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.566 seconds (process running for 5.007)
+2026-04-03 14:54:02 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 14:54:43 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 14:54:43 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 14:54:45 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 14:54:45 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 14:54:49 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 14:54:49 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:04:23 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 15:04:23 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 15:04:26 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:04:26 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:18:05 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m19s881ms818µs).
+2026-04-03 15:21:35 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 15:21:35 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 15:21:44 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:21:44 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:42:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 15:42:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 15:43:21 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 25816 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 15:43:21 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 15:43:21 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 15:43:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:43:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 15:43:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 15:43:22 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 15:43:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 15:43:22 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@317d01dd
+2026-04-03 15:43:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 15:43:23 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:43:23 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:43:24 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 15:43:24 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 15:43:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:43:24 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.11 seconds (process running for 4.465)
+2026-04-03 15:49:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 15:49:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 15:51:16 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 14756 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 15:51:16 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 15:51:16 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 15:51:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:51:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 15:51:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 15:51:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 15:51:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 15:51:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b1accd2
+2026-04-03 15:51:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 15:51:18 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:51:18 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:51:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 15:51:20 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 15:51:20 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:51:20 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.417 seconds (process running for 4.842)
+2026-04-03 15:51:32 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 15:51:38 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 15:51:38 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 15:51:41 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:51:41 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:51:47 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 15:51:47 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 15:51:54 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:51:54 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:51:59 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:51:59 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:52:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 15:52:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 15:57:03 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 30536 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 15:57:03 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 15:57:03 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 15:57:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:57:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 15:57:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 15:57:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 15:57:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 15:57:05 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2619d008
+2026-04-03 15:57:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 15:57:05 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:57:05 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 15:57:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 15:57:07 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 15:57:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 15:57:07 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.198 seconds (process running for 4.577)
+2026-04-03 15:57:28 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 15:57:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:57:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 15:58:03 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 15:58:03 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 15:58:42 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 15:58:42 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:00:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 16:00:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 16:06:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 23548 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 16:06:14 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 16:06:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 16:06:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:06:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 16:06:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 16:06:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 16:06:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 16:06:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@94a68dd
+2026-04-03 16:06:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 16:06:16 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:06:16 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:06:18 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 16:06:18 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 16:06:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:06:18 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.793 seconds (process running for 5.167)
+2026-04-03 16:06:19 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 16:06:19 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:06:19 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:07:11 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:07:11 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:07:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 16:07:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 16:07:14 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:07:14 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:07:15 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 16:07:15 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 16:07:16 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:07:16 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:07:19 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:07:19 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:07:21 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 16:07:21 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 16:07:24 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:07:24 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:07:25 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:07:25 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:07:26 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:07:26 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:22:50 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:22:50 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:22:53 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:22:53 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:22:55 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:22:55 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:22:56 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:22:56 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:22:57 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:22:57 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:22:58 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:22:58 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:22:58 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:22:58 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:23:00 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:23:00 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:23:00 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:23:01 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:23:02 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:23:02 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:23:08 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:23:08 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:23:10 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:23:10 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:23:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 16:23:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 16:23:50 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 30148 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 16:23:50 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 16:23:50 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 16:23:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:23:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 16:23:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 16:23:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 16:23:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 16:23:52 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23437a19
+2026-04-03 16:23:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 16:23:53 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:23:53 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:23:54 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 16:23:54 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 16:23:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:23:54 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.493 seconds (process running for 4.882)
+2026-04-03 16:24:11 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 16:24:11 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:24:11 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:24:12 [http-nio-8082-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to read logs]
+2026-04-03 16:24:15 [http-nio-8082-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to read logs]
+2026-04-03 16:24:17 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:24:17 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:24:19 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:24:19 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:24:20 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:24:20 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:24:22 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:24:22 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:24:36 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:24:36 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:24:41 [http-nio-8082-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to read logs]
+2026-04-03 16:24:42 [http-nio-8082-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to read logs]
+2026-04-03 16:24:43 [http-nio-8082-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to read logs]
+2026-04-03 16:36:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 16:36:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 16:36:18 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 25068 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 16:36:18 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 16:36:18 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 16:36:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:36:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 16:36:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 16:36:19 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 16:36:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 16:36:20 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c33b035
+2026-04-03 16:36:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 16:36:20 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:36:20 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 16:36:22 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 16:36:22 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 16:36:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 16:36:22 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.079 seconds (process running for 4.479)
+2026-04-03 16:36:37 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 16:36:37 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:36:38 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:36:57 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 16:36:57 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:36:58 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=5
+2026-04-03 16:36:58 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 16:36:59 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=5
+2026-04-03 16:36:59 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 16:37:52 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=2
+2026-04-03 16:37:52 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 16:37:56 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 16:37:56 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 16:38:02 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=2
+2026-04-03 16:38:02 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 revenue records out of 9
+2026-04-03 17:15:52 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 17:15:52 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 17:15:59 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 17:15:59 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 17:16:06 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=10
+2026-04-03 17:16:06 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 17:16:11 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 17:16:11 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 17:22:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 17:22:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 17:28:33 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 3432 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 17:28:33 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 17:28:33 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 17:28:34 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 17:28:34 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 17:28:34 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 17:28:34 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 17:28:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 17:28:35 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abc084c
+2026-04-03 17:28:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 17:28:36 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 17:28:36 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 17:28:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 17:28:38 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 17:28:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 17:28:38 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 6.48 seconds (process running for 7.145)
+2026-04-03 17:34:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 17:34:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 18:13:08 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 15340 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 18:13:08 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 18:13:08 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 18:13:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 18:13:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 18:13:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 18:13:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 18:13:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 18:13:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c5a29ba
+2026-04-03 18:13:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 18:13:11 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 18:13:11 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 18:13:13 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 18:13:13 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 18:13:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 18:13:13 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.696 seconds (process running for 6.335)
+2026-04-03 18:13:20 [http-nio-8082-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 18:13:57 [http-nio-8082-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource admin/reports/revenue.]
+2026-04-03 18:15:58 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 18:15:58 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 18:16:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 18:16:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 18:17:05 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 12368 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 18:17:05 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 18:17:05 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 18:17:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 18:17:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 18:17:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 18:17:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 18:17:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 18:17:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abc084c
+2026-04-03 18:17:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 18:17:08 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 18:17:08 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 18:17:10 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 18:17:10 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 18:17:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 18:17:10 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.233 seconds (process running for 5.782)
+2026-04-03 18:17:15 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 18:17:15 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 18:17:15 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 18:17:20 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=2
+2026-04-03 18:17:20 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 18:17:23 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=2
+2026-04-03 18:17:23 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 revenue records out of 9
+2026-04-03 18:17:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 18:17:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:10:28 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 25980 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:10:28 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:10:28 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:10:30 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:10:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:10:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:10:30 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:10:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:10:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abc084c
+2026-04-03 19:10:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:10:31 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:10:31 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:10:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:10:33 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:10:33 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:10:33 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.482 seconds (process running for 6.13)
+2026-04-03 19:12:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 19:12:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:15:56 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 20876 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:15:56 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:15:56 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:15:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:15:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:15:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:15:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:15:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:15:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c438230
+2026-04-03 19:15:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:15:58 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:15:58 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:16:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:16:01 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:16:02 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:16:02 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 6.621 seconds (process running for 7.263)
+2026-04-03 19:16:07 [http-nio-8082-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 19:16:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 19:16:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:20:55 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 26488 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:20:55 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:20:55 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:20:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:20:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:20:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:20:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:20:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:20:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1274b8e4
+2026-04-03 19:20:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:20:58 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:20:58 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:21:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:21:01 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:21:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:21:01 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 6.686 seconds (process running for 7.164)
+2026-04-03 19:21:05 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 19:22:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 19:22:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:43:05 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 7520 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:43:05 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:43:05 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:43:06 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:43:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:43:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:43:06 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:43:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:43:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ae85a5
+2026-04-03 19:43:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:43:07 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:43:07 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:43:08 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:43:09 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:43:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:43:09 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.446 seconds (process running for 5.044)
+2026-04-03 19:44:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 19:44:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:44:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 26584 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:44:14 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:44:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:44:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:44:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:44:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:44:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:44:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:44:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c33b035
+2026-04-03 19:44:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:44:16 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:44:16 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:44:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:44:18 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:44:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:44:18 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.401 seconds (process running for 5.08)
+2026-04-03 19:45:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 19:45:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 19:53:31 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 21932 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 19:53:31 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 19:53:31 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:53:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:53:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:53:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 19:53:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:53:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 19:53:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a339e54
+2026-04-03 19:53:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 19:53:33 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:53:33 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 19:53:35 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 19:53:35 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 19:53:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 19:53:35 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.464 seconds (process running for 4.871)
+2026-04-03 19:56:46 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 19:56:46 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 19:56:46 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 19:56:46 [http-nio-8082-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-04-03 20:00:45 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:00:45 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:01:02 [http-nio-8082-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/admin/reports/staff.]
+2026-04-03 20:01:02 [http-nio-8082-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-04-03 20:04:31 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:04:31 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:04:36 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:04:36 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:04:38 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:04:38 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:04:42 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:04:42 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:04:47 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:04:47 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:04:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=10
+2026-04-03 20:04:56 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 20:05:01 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:05:01 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:06:58 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=2
+2026-04-03 20:06:58 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 revenue records out of 9
+2026-04-03 20:10:38 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:10:38 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:14:48 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=10
+2026-04-03 20:14:48 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 20:16:04 [http-nio-8082-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-04-03 20:16:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:16:13 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:18:05 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:18:05 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:18:25 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:18:25 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:18:29 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:18:29 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:22:21 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:22:21 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:22:25 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:22:25 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:22:29 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:22:29 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:23:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=2
+2026-04-03 20:23:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 revenue records out of 9
+2026-04-03 20:26:33 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:26:33 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:26:38 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:26:38 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:26:40 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:26:40 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:26:49 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:26:49 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:27:01 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=10
+2026-04-03 20:27:01 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 20:27:02 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:27:02 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:30:41 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:30:41 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:31:05 [http-nio-8082-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/admin/staff.]
+2026-04-03 20:31:15 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=2
+2026-04-03 20:31:15 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 20:31:18 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=5
+2026-04-03 20:31:18 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 records out of 14
+2026-04-03 20:36:36 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:36:36 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:42:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 20:42:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 20:43:42 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 19184 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 20:43:42 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 20:43:42 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:43:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 20:43:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:43:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 20:43:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:43:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 20:43:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56cfede5
+2026-04-03 20:43:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 20:43:44 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 20:43:44 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 20:43:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 20:43:46 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 20:43:46 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 20:43:46 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 4.24 seconds (process running for 4.683)
+2026-04-03 20:44:27 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:44:27 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:44:27 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:44:47 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:44:47 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:45:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:45:09 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:45:47 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:45:47 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:53:19 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:53:19 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:55:29 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 20:55:29 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 20:55:33 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=1 size=5
+2026-04-03 20:55:33 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 revenue records out of 9
+2026-04-03 20:55:42 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:55:42 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 20:57:44 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 20:57:44 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 21:00:54 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 21:00:54 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 21:00:57 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=10
+2026-04-03 21:00:57 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 4 records out of 14
+2026-04-03 21:00:58 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=10
+2026-04-03 21:00:58 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 10 records out of 14
+2026-04-03 21:01:54 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:01:54 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:02:03 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=6
+2026-04-03 21:02:03 [http-nio-8082-exec-5] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:02:05 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=6
+2026-04-03 21:02:05 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 21:05:56 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=6
+2026-04-03 21:05:56 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 21:06:01 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:06:01 [http-nio-8082-exec-4] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:06:11 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:06:11 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:06:18 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=6
+2026-04-03 21:06:18 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:06:21 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=2 size=6
+2026-04-03 21:06:21 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 2 records out of 14
+2026-04-03 21:06:23 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=1 size=6
+2026-04-03 21:06:23 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:06:25 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:06:25 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:09:05 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 21:09:05 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 21:09:08 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:09:08 [http-nio-8082-exec-7] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:13:52 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:13:52 [http-nio-8082-exec-2] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:14:03 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:14:03 [http-nio-8082-exec-3] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:14:04 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 21:14:04 [http-nio-8082-exec-9] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 21:14:12 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:14:12 [http-nio-8082-exec-6] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:16:55 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:16:55 [http-nio-8082-exec-8] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:17:46 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching revenue | page=0 size=5
+2026-04-03 21:17:46 [http-nio-8082-exec-10] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 5 revenue records out of 9
+2026-04-03 21:18:10 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Fetching staff | page=0 size=6
+2026-04-03 21:18:10 [http-nio-8082-exec-1] INFO  c.h.h.service.impl.AdminServiceImpl - Returning 6 records out of 14
+2026-04-03 21:19:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 21:19:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 23:08:43 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 31172 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 23:08:43 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 23:08:43 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 23:08:44 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 23:08:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 23:08:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 23:08:44 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 23:08:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 23:08:45 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65d10a30
+2026-04-03 23:08:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 23:08:46 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 23:08:46 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 23:08:47 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 23:08:48 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 23:08:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 23:08:48 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.719 seconds (process running for 6.304)
+2026-04-03 23:09:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 23:09:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 23:09:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Starting HospitalManagementApplication using Java 25.0.2 with PID 12036 (C:\Users\ak104\OneDrive\Desktop\hospital-management\target\classes started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 23:09:14 [restartedMain] DEBUG c.h.h.HospitalManagementApplication - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 23:09:14 [restartedMain] INFO  c.h.h.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 23:09:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-03 23:09:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 23:09:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-03 23:09:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 23:09:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 23:09:16 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c33b035
+2026-04-03 23:09:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 23:09:17 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 23:09:17 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.hms.hospital_management.entity.Block_Id
+2026-04-03 23:09:18 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 23:09:18 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 23:09:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-03 23:09:19 [restartedMain] INFO  c.h.h.HospitalManagementApplication - Started HospitalManagementApplication in 5.228 seconds (process running for 5.676)
+2026-04-03 23:09:27 [http-nio-8082-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 23:09:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 23:09:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

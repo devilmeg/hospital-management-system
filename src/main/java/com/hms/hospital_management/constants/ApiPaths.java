@@ -9,7 +9,7 @@ public final class ApiPaths {
     public static final String VERSION_V1 = "/v1";
     public static final String V1_BASE = API_BASE + VERSION_V1;
 
-
+    public static final String LOGS = "/logs";
     public static final String AUTH = V1_BASE + "/auth";
     public static final String LOGIN = "/login";
     public static final String REGISTER = "/register";
