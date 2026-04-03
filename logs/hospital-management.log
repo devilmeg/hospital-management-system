@@ -1,0 +1,5 @@
+2026-04-03 11:31:42 [main] INFO  c.h.h.controller.AdminControllerTest - Starting AdminControllerTest using Java 25.0.2 with PID 7920 (started by ak104 in C:\Users\ak104\OneDrive\Desktop\hospital-management)
+2026-04-03 11:31:42 [main] DEBUG c.h.h.controller.AdminControllerTest - Running with Spring Boot v3.5.12, Spring v6.2.17
+2026-04-03 11:31:42 [main] INFO  c.h.h.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 11:31:44 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-04-03 11:31:45 [main] INFO  c.h.h.controller.AdminControllerTest - Started AdminControllerTest in 3.17 seconds (process running for 4.641)
